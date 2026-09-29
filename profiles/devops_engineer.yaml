@@ -1,0 +1,45 @@
+id: devops_engineer
+role: "DevOps / платформенный инженер"
+description: >
+  Отвечает за CI/CD, Kubernetes, облачную и on-prem инфраструктуру. Интересуют
+  релизы инструментов, уязвимости в цепочке поставки и контейнерах, практики
+  эксплуатации, надёжность и стоимость платформы.
+topics:
+  - {name: "Kubernetes и контейнеры", weight: 1.0}
+  - {name: "CI/CD и безопасность цепочки поставки", weight: 1.0}
+  - {name: "Инфраструктура как код и автоматизация", weight: 0.9}
+  - {name: "Наблюдаемость и отказоустойчивость", weight: 0.8}
+  - {name: "Уязвимости в инфраструктурном ПО", weight: 0.8}
+keywords:
+  - Kubernetes
+  - k8s
+  - Docker
+  - контейнер
+  - Helm
+  - Terraform
+  - Ansible
+  - CI/CD
+  - GitLab
+  - GitHub Actions
+  - Jenkins
+  - supply chain
+  - цепочка поставки
+  - SBOM
+  - npm
+  - PyPI
+  - образ контейнера
+  - Prometheus
+  - Grafana
+  - мониторинг
+  - Linux
+  - ядро Linux
+  - nginx
+  - PostgreSQL
+  - облако
+  - релиз
+  - уязвимость
+tech_stack: ["Kubernetes", "Docker", "GitLab CI", "Terraform", "Ansible", "Linux", "PostgreSQL", "Prometheus"]
+deprioritize: ["новости о крупных утечках без технической стороны", "политика и регуляторика", "потребительские гаджеты"]
+digest_style:
+  action_block_title: "Что обновить или проверить в платформе"
+  action_hint: "Версии и патчи для инфраструктурного ПО, скомпрометированные пакеты и образы, изменения в инструментах."

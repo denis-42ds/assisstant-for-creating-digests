@@ -1,0 +1,74 @@
+# Кандидаты в источники. ВСЕ URL фидов НЕ ПРОВЕРЕНЫ из песочницы —
+# запусти: python tools/check_feeds.py
+# Поле alt_urls — запасные адреса фида, если основной не отвечает.
+sources:
+  - id: habr_infosec
+    name: "Хабр — хаб «Информационная безопасность»"
+    site: https://habr.com/ru/hubs/infosecurity/
+    # схема путей менялась в 2026: было /rss/hub/<hub>/all/, стало /rss/hubs/<hub>/articles/all/?fl=ru
+    # (подтверждено product manager habr.com в qna.habr.com/q/1301000). Не проверено live из песочницы.
+    feed: https://habr.com/ru/rss/hubs/infosecurity/articles/all/?fl=ru
+    alt_urls:
+      - https://habr.com/ru/rss/hub/infosecurity/all/
+    lang: ru
+    domain: [ib]
+    license_note: "Проверить условия; в корпусе только заголовок, ссылка, дата, аннотация"
+
+  - id: habr_devops
+    name: "Хабр — хаб «DevOps»"
+    site: https://habr.com/ru/hubs/devops/
+    feed: https://habr.com/ru/rss/hubs/devops/articles/all/?fl=ru
+    alt_urls:
+      - https://habr.com/ru/rss/hub/devops/all/
+    lang: ru
+    domain: [it]
+    license_note: "Проверить условия; в корпусе только заголовок, ссылка, дата, аннотация"
+
+  - id: securitylab
+    name: "SecurityLab.ru — новости"
+    site: https://www.securitylab.ru/news/
+    feed: https://www.securitylab.ru/rss/allnews/
+    alt_urls: []
+    lang: ru
+    domain: [ib]
+    license_note: "Новости: CC BY 3.0 с указанием автора и активной ссылкой (по условиям сайта)"
+
+  - id: xakep
+    name: "Xakep.ru («Хакер»)"
+    site: https://xakep.ru/
+    feed: https://xakep.ru/feed/
+    alt_urls: []
+    lang: ru
+    domain: [ib]
+    license_note: "Проверить условия"
+
+  - id: opennet
+    name: "OpenNet — новости"
+    site: https://www.opennet.ru/opennews/
+    feed: https://www.opennet.ru/opennews/opennews_all.rss
+    alt_urls: []
+    lang: ru
+    domain: [it, ib]
+    license_note: "Проверить условия"
+
+  - id: anti_malware
+    name: "Anti-Malware.ru — новости"
+    site: https://www.anti-malware.ru/news
+    feed: https://www.anti-malware.ru/news/feed
+    alt_urls:
+      - https://www.anti-malware.ru/rss.xml
+    lang: ru
+    domain: [ib]
+    license_note: "Проверить условия"
+
+  # Опциональный англоязычный кандидат (CERT-уровень). Смешивание ru/en
+  # усложняет TF-IDF — включать только если профили двуязычные (они такие).
+  - id: cisa_advisories
+    name: "CISA — Cybersecurity Advisories"
+    site: https://www.cisa.gov/news-events/cybersecurity-advisories
+    feed: https://www.cisa.gov/cybersecurity-advisories/all.xml
+    alt_urls: []
+    lang: en
+    domain: [ib]
+    optional: true
+    license_note: "Материалы правительства США; проверить условия"
