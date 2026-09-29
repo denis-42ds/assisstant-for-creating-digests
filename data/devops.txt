@@ -1,0 +1,32 @@
+Профиль: devops_engineer | вход: 98 | после предфильтра: 15
+
+0.075  [habr_devops] Kubernetes просто, часть 4: как трафик попадает в кластер, NodePort и LoadBalancer
+        почему: kubernetes, как
+0.067  [opennet] Выпуск M-Commander 6.1.0, форка файлового менеджера Midnight Commander
+        почему: контейнеры, kubernetes, docker, код
+0.064  [opennet] Уязвимости в LXD, Incus, Flatpak, GitLab, Radicle, ядре Linux, WordPress, OpenVPN, NTFS-3G, FreeRDP, CUPS и Dovecot
+        почему: уязвимости, gitlab, linux
+0.059  [habr_devops] От метрики до дежурного: путь алерта через Prometheus, Alertmanager и nxs-anomaly
+        почему: prometheus, цепочки, по
+0.056  [habr_devops] Из ClickOps в код: как я оживил Terraformer и научил его говорить с провайдерами напрямую
+        почему: инфраструктура, terraform, код, github
+0.049  [habr_devops] Как мы перестали писать описания к merge request руками: AI Describer в GitLab CI и Jenkins
+        почему: ci, gitlab, jenkins, как
+0.042  [habr_devops] Какие наши продукты задевает эта CVE? Я продолжил заброшенный Minefield и нашёл, что он читал SBOM задом наперёд
+        почему: sbom, уязвимости, как, по
+0.041  [opennet] Выпуск Wifibox 0.17, окружения для использования WiFi-драйверов Linux во FreeBSD
+        почему: linux
+0.039  [habr_devops] Retry policy на практике: подводные камни внедрения
+        почему: как, код, по
+0.038  [habr_infosec] Не начинать с LangChain: как спроектировать корпоративную GenAI платформу до реализации
+        почему: kubernetes, postgresql, как
+0.036  [habr_devops] Docker для параноика: организация SSH‑доступа для rootless‑контейнера без передачи приватного ключа
+        почему: docker, контейнера, по
+0.035  [opennet] Выпуск среды рабочего стола COSMIC 1.9.0
+        почему: linux, код
+0.033  [habr_infosec] Галлюцинация нейросети в коде обычно ломает сборку. С выдуманным пакетом иначе: его имя может занять вредонос
+        почему: npm, код, по, pypi
+0.032  [habr_devops] Coroot: eBPF-профилирование, логи, трейсы в приложениях в kubernetes
+        почему: kubernetes, контейнер, мониторинг
+0.030  [habr_infosec] Security Week 2640: фундаментальная уязвимость в файловых системах Windows, Linux, Android и macOS
+        почему: linux, уязвимость
