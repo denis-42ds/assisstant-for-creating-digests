@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Corpus of publications (frozen input)",
+  "type": "object",
+  "required": ["meta", "items"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["version", "collected_at", "sources"],
+      "properties": {
+        "version": {"type": "string", "description": "версия корпуса, напр. corpus-1"},
+        "collected_at": {"type": "string", "format": "date-time"},
+        "sources": {"type": "array", "items": {"type": "string"}, "description": "id источников из sources.yaml"},
+        "note": {"type": "string"}
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "url", "source", "published", "summary", "lang"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "description": "sha1(url)[:12] — стабильный идентификатор"},
+          "title": {"type": "string", "minLength": 1},
+          "url": {"type": "string", "pattern": "^https?://"},
+          "source": {"type": "string", "description": "id источника"},
+          "published": {"type": "string", "format": "date-time", "description": "UTC, ISO 8601"},
+          "summary": {"type": "string", "maxLength": 600, "description": "аннотация из фида без HTML, обрезана; полных текстов нет"},
+          "lang": {"enum": ["ru", "en"]},
+          "tags": {"type": "array", "items": {"type": "string"}, "description": "категории из фида, если есть"}
+        }
+      }
+    }
+  }
+}
