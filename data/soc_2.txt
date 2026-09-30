@@ -1,0 +1,32 @@
+Профиль: soc_analyst | вход: 98 | после предфильтра: 15
+
+0.097  [cisa_advisories] Critical Zero-Day Vulnerabilities Exploited in Citrix NetScaler ADC, Gateway
+        почему: threat, day, cve, zero
+0.058  [xakep] Инструментом вымогателей стали групповые политики Active Directory
+        почему: малварь, directory, windows, active
+0.050  [opennet] Уязвимости в LXD, Incus, Flatpak, GitLab, Radicle, ядре Linux, WordPress, OpenVPN, NTFS-3G, FreeRDP, CUPS и Dovecot
+        почему: уязвимости, linux
+0.045  [habr_infosec] Спуфинг кампания CaptiveCrunch: отпуск с «трояном в кармане» или как отельный Wi‑Fi может стать точкой кражи данных
+        почему: threat, кампания, apt, ioc
+0.033  [habr_devops] Какие наши продукты задевает эта CVE? Я продолжил заброшенный Minefield и нашёл, что он читал SBOM задом наперёд
+        почему: уязвимости, kev, cisa, cve
+0.032  [opennet] Атаки по сторонним каналам через механизм отслеживания изменений в ФС
+        почему: атак, windows, linux
+0.025  [opennet] Выпуск Samba 4.25.0
+        почему: windows, directory, active
+0.023  [cisa_advisories] CISA Adds Four Known Exploited Vulnerabilities to Catalog
+        почему: cve, cisa, kev, active
+0.023  [cisa_advisories] CISA Adds One Known Exploited Vulnerability to Catalog
+        почему: kev, cisa, active, cve
+0.023  [cisa_advisories] CISA Adds Two Known Exploited Vulnerabilities to Catalog
+        почему: cisa, cve, kev, active
+0.023  [cisa_advisories] CISA Adds One Known Exploited Vulnerability to Catalog
+        почему: kev, cisa, active, cve
+0.022  [cisa_advisories] CISA Adds Two Known Exploited Vulnerabilities to Catalog
+        почему: cisa, cve, kev, active
+0.022  [cisa_advisories] CISA Adds Two Known Exploited Vulnerabilities to Catalog
+        почему: cisa, cve, kev, active
+0.021  [anti_malware] Apple закрыла 0-day в iOS, которую использовали в сложных кибератаках
+        почему: day, cve
+0.020  [cisa_advisories] Botslab G980H Dashcams
+        почему: cve

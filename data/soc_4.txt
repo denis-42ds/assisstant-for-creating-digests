@@ -1,0 +1,32 @@
+Профиль: soc_analyst | вход: 98 | после предфильтра: 15
+
+0.191  [cisa_advisories] Critical Zero-Day Vulnerabilities Exploited in Citrix NetScaler ADC, Gateway
+        почему: day, cve, zero, «CISA KEV»
+0.097  [opennet] Выпуск Samba 4.25.0
+        почему: windows, «Active Directory»
+0.084  [cisa_advisories] CISA Adds Four Known Exploited Vulnerabilities to Catalog
+        почему: cve, «CISA KEV»
+0.078  [xakep] Инструментом вымогателей стали групповые политики Active Directory
+        почему: windows, «Active Directory»
+0.075  [cisa_advisories] CISA Adds Two Known Exploited Vulnerabilities to Catalog
+        почему: cve, «CISA KEV»
+0.074  [cisa_advisories] CISA Adds Two Known Exploited Vulnerabilities to Catalog
+        почему: cve, «CISA KEV»
+0.074  [cisa_advisories] CISA Adds Two Known Exploited Vulnerabilities to Catalog
+        почему: cve, «CISA KEV»
+0.067  [cisa_advisories] CISA Adds One Known Exploited Vulnerability to Catalog
+        почему: cve, «CISA KEV»
+0.067  [cisa_advisories] CISA Adds One Known Exploited Vulnerability to Catalog
+        почему: cve, «CISA KEV»
+0.066  [habr_devops] Какие наши продукты задевает эта CVE? Я продолжил заброшенный Minefield и нашёл, что он читал SBOM задом наперёд
+        почему: cve, «CISA KEV»
+0.059  [anti_malware] Apple закрыла 0-day в iOS, которую использовали в сложных кибератаках
+        почему: day, cve
+0.057  [cisa_advisories] Botslab G980H Dashcams
+        почему: cve
+0.046  [habr_infosec] Security Week 2640: фундаментальная уязвимость в файловых системах Windows, Linux, Android и macOS
+        почему: windows, linux
+0.038  [opennet] Выпуск Wifibox 0.17, окружения для использования WiFi-драйверов Linux во FreeBSD
+        почему: linux
+0.038  [anti_malware] Windows 11 может хранить миниатюры удалённых фото
+        почему: windows
