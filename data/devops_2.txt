@@ -1,0 +1,32 @@
+Профиль: devops_engineer | вход: 98 | после предфильтра: 15
+
+0.065  [opennet] Уязвимости в LXD, Incus, Flatpak, GitLab, Radicle, ядре Linux, WordPress, OpenVPN, NTFS-3G, FreeRDP, CUPS и Dovecot
+        почему: уязвимости, gitlab, linux
+0.063  [opennet] Выпуск M-Commander 6.1.0, форка файлового менеджера Midnight Commander
+        почему: контейнеры, kubernetes, docker, код
+0.062  [habr_devops] Kubernetes просто, часть 4: как трафик попадает в кластер, NodePort и LoadBalancer
+        почему: kubernetes
+0.057  [habr_devops] Из ClickOps в код: как я оживил Terraformer и научил его говорить с провайдерами напрямую
+        почему: инфраструктура, terraform, код, github
+0.056  [habr_devops] От метрики до дежурного: путь алерта через Prometheus, Alertmanager и nxs-anomaly
+        почему: prometheus, цепочки
+0.044  [habr_devops] Как мы перестали писать описания к merge request руками: AI Describer в GitLab CI и Jenkins
+        почему: ci, gitlab, jenkins
+0.043  [opennet] Выпуск Wifibox 0.17, окружения для использования WiFi-драйверов Linux во FreeBSD
+        почему: linux
+0.036  [opennet] Выпуск среды рабочего стола COSMIC 1.9.0
+        почему: linux, код
+0.035  [habr_devops] Docker для параноика: организация SSH‑доступа для rootless‑контейнера без передачи приватного ключа
+        почему: docker, контейнера
+0.035  [habr_devops] Coroot: eBPF-профилирование, логи, трейсы в приложениях в kubernetes
+        почему: kubernetes, контейнер, мониторинг
+0.033  [habr_devops] А что, если бы Kubernetes был человеком: Kyvernetria, Mansplainetes и Misogynetes
+        почему: kubernetes
+0.031  [habr_infosec] Security Week 2640: фундаментальная уязвимость в файловых системах Windows, Linux, Android и macOS
+        почему: linux, уязвимость
+0.031  [habr_infosec] Не начинать с LangChain: как спроектировать корпоративную GenAI платформу до реализации
+        почему: kubernetes, postgresql
+0.029  [habr_infosec] Галлюцинация нейросети в коде обычно ломает сборку. С выдуманным пакетом иначе: его имя может занять вредонос
+        почему: npm, код, pypi
+0.028  [habr_devops] Next.js без Vercel: деплой на один VPS с переключением без простоя и откатом за секунды
+        почему: kubernetes, docker
