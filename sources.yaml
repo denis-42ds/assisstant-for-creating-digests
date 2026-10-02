@@ -31,7 +31,12 @@ sources:
     alt_urls: []
     lang: ru
     domain: [ib]
+    optional: true
     license_note: "Новости: CC BY 3.0 с указанием автора и активной ссылкой (по условиям сайта)"
+    known_issue: >
+      HTTP 401 на RSS даже с браузерным UA+Referer (проверено 29.09.2026,
+      tools/_http.py). Похоже на более строгую защиту, чем обычный
+      антибот-фильтр — не тратим больше времени, идём на 6 источниках.
 
   - id: xakep
     name: "Xakep.ru («Хакер»)"
@@ -60,6 +65,33 @@ sources:
     lang: ru
     domain: [ib]
     license_note: "Проверить условия"
+
+  # Деловые/управленческие источники (добавлены 01.10 по файлу-образцу от
+  # организаторов — Dataset 2 "руководство и работники" ссылается на эти
+  # сайты, а не на хакерские блоги). Нацелены на профиль it_director_ciso.
+  - id: cisoclub
+    name: "CISOCLUB — новости ИБ для бизнеса"
+    site: https://cisoclub.ru/category/news/
+    # URL по конвенции WordPress (/feed/) - НЕ ПРОВЕРЕНО live, сайт не
+    # индексируется в доступном мне поиске с точным адресом фида.
+    feed: https://cisoclub.ru/feed/
+    alt_urls: []
+    lang: ru
+    domain: [ib, business]
+    optional: true
+    license_note: "Проверить условия; в корпусе только заголовок, ссылка, дата, аннотация"
+
+  - id: kommersant
+    name: "Коммерсантъ — главные новости"
+    site: https://www.kommersant.ru/
+    # Подтверждено по курируемому списку github.com/plenaryapp/awesome-rss-feeds
+    # (Russia.opml) - сам URL live не фетчился из песочницы.
+    feed: https://www.kommersant.ru/RSS/main.xml
+    alt_urls: []
+    lang: ru
+    domain: [business]
+    optional: true
+    license_note: "Общие деловые новости, не узкоспециализированная ИБ-лента - фильтруется профилем/предфильтром"
 
   # Опциональный англоязычный кандидат (CERT-уровень). Смешивание ru/en
   # усложняет TF-IDF — включать только если профили двуязычные (они такие).
