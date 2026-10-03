@@ -294,6 +294,27 @@ def _normalize_tags(tags: list[str]) -> list[str]:
     return out
 
 
+def _normalize_weight(group: str, weight: str) -> str:
+    """Защита, аналогичная _normalize_tags: на реальном прогоне 03.10
+    нашли, что LLM (Gemini) иногда обрезает вес до первого слова
+    ("Высокая" вместо "Высокая (есть эксплойт)") - это ломало и отображение
+    (теряется пояснение), и сортировку в render.py (точное совпадение не
+    находилось, элементы оставались в исходном порядке вместо группировки
+    по весу). Сопоставляем по началу строки, возвращаем канонический
+    вариант из TECH_GROUP_WEIGHTS; если соответствия нет - оставляем как
+    есть и предупреждаем, не падаем."""
+    candidates = TECH_GROUP_WEIGHTS.get(group, [])
+    weight = weight.strip()
+    if weight in candidates:
+        return weight
+    for c in candidates:
+        c_head = c.split(" (")[0].strip()
+        if weight == c_head or c.startswith(weight) or weight.startswith(c_head):
+            return c
+    print(f"[llm_stage] предупреждение: вес не из шкалы категории {group!r}: {weight!r}")
+    return weight
+
+
 def _items_json(batch: list[dict]) -> str:
     return json.dumps(
         [
@@ -388,6 +409,8 @@ def annotate(
             extra = {k: v for k, v in ann.items() if k != "index"}
             if audience == "manager" and "tags" in extra:
                 extra["tags"] = _normalize_tags(extra["tags"])
+            elif audience != "manager" and "weight" in extra:
+                extra["weight"] = _normalize_weight(extra.get("group", ""), extra["weight"])
             results.append({**item, **extra})
     return results
 
