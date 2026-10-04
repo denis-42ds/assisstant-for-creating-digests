@@ -38,9 +38,9 @@ cp .env.example .env
 
 | `LLM_BACKEND` | Что нужно в `.env` |
 |---|---|
-| `claude` (по умолчанию) | `ANTHROPIC_API_KEY` |
+| `claude` | `ANTHROPIC_API_KEY` |
 | `ollama` | локально: `ollama pull qwen3.6:35b-a3b` + `ollama serve` |
-| `gemini` | `GEMINI_API_KEY` + `GEMINI_MODEL` (напр. `gemini-2.5-flash`) |
+| `gemini` | `GEMINI_API_KEY` + `GEMINI_MODEL` (напр. `gemini-3.8-flash`) |
 | `openrouter` | `OPENROUTER_API_KEY` + `OPENROUTER_MODEL` |
 
 Для `ollama` рекомендуется `export OLLAMA_CONTEXT_LENGTH=22000` перед
@@ -88,13 +88,8 @@ streamlit run app.py
 
 Публичная ссылка (своя машина, без managed-хостинга):
 ```bash
-ngrok http --domain=<твой-закреплённый-домен>.ngrok-free.app 8501
+ngrok http --domain=https://bernetta-carpological-jessie.ngrok-free.dev 8501
 ```
-Домен нужно один раз закрепить в дашборде ngrok (Domains → добавить
-бесплатный static domain), иначе ссылка будет меняться при каждом
-перезапуске. Подробный чек-лист по надёжности (автозапуск после
-перезагрузки, супервизор процесса, отключение сна) — см. историю чата
-«Разработка».
 
 ## Структура проекта
 
