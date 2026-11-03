@@ -15,7 +15,9 @@
 и формирует готовый дайджест в Markdown. Сделано для хакатона Codenrock
 (задача «Ассистент для создания ИТ/ИБ-дайджестов»).
 
-**🎬 [Видео-демонстрация](https://drive.google.com/file/d/1R9IpvVCoYZjWTjmRb1gsaKIUsEtAXpqY/view?usp=sharing)  ·  📑 [Презентация](https://drive.google.com/file/d/1-AbIgJLARBqQWl87jGv_lOhjnCuaBAYW/view?usp=sharing)**
+**Место в зачёте: 22/30, Количесво баллов: 16,3333/27**
+
+**🎬 [Видео-демонстрация](https://drive.google.com/file/d/1R9IpvVCoYZjWTjmRb1gsaKIUsEtAXpqY/view?usp=sharing)  ·  📑 [Презентация](https://drive.google.com/file/d/1-AbIgJLARBqQWl87jGv_lOhjnCuaBAYW/view?usp=sharing)  ·  🎖️ [Сертификат участника](https://drive.google.com/file/d/1J3wu19HTZRT0HB8oVWVq6xXy3U2y0V8V/view?usp=sharing)**
 
 ![Веб-интерфейс](docs/img/web-ui.png)
 
@@ -161,7 +163,7 @@ ngrok http --domain=bernetta-carpological-jessie.ngrok-free.dev 8501
 Готовые дайджесты лежат в `output/`: по одному на профиль, собраны на
 одном корпусе (119 публикаций, 7 из 9 источников рабочие).
 
-docs/img/digest-sample.png
+![Пример дайджеста](docs/img/digest-sample.png)
 
 ## Структура проекта
 
